@@ -1,14 +1,14 @@
 {
-  "name": "pancakeswap-peripheral",
+  "name": "pantherswap-peripheral",
   "version": "1.1.0-beta.0",
-  "description": "🎚 Peripheral smart contracts for interacting with pancake",
+  "description": "Peripheral smart contracts for interacting with panther",
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://pancakeswap.finance",
+  "homepage": "https://pantherswap.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pancakeswap/pancake-swap-periphery.git"
+    "url": "https://github.com/pantherswap/panther-swap-periphery.git"
   },
   "files": [
     "build",
