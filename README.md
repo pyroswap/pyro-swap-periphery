@@ -1,4 +1,4 @@
-# Pancake Router
+# PantherSwap Router
 
 ### Bsc-Test
 
