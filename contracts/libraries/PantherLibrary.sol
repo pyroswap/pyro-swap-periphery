@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0;
 
-import '@uniswap/v2-core/contracts/interfaces/IPantherPair.sol';
+import '@pantherswap-libs/panther-swap-core/contracts/interfaces/IPantherPair.sol';
 
 import "./SafeMath.sol";
 

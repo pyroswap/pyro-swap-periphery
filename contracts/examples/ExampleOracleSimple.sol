@@ -1,7 +1,7 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/v2-core/contracts/interfaces/IPantherFactory.sol';
-import '@uniswap/v2-core/contracts/interfaces/IPantherPair.sol';
+import '@pantherswap-libs/panther-swap-core/contracts/interfaces/IPantherFactory.sol';
+import '@pantherswap-libs/panther-swap-core/contracts/interfaces/IPantherPair.sol';
 import '@uniswap/lib/contracts/libraries/FixedPoint.sol';
 
 import '../libraries/PantherOracleLibrary.sol';
