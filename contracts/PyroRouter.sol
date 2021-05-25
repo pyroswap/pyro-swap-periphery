@@ -1,4 +1,4 @@
-pyropragma solidity =0.6.6;
+pragma solidity =0.6.6;
 
 import '@pyroswap/pyro-swap-core/contracts/interfaces/IPyroFactory.sol';
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
