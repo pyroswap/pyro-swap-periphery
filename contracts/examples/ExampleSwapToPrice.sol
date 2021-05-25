@@ -1,21 +1,21 @@
 pragma solidity =0.6.6;
 
-import '@pantherswap-libs/panther-swap-core/contracts/interfaces/IPantherPair.sol';
+import '@pyroswap/pyro-swap-core/contracts/interfaces/IPyroPair.sol';
 import '@uniswap/lib/contracts/libraries/Babylonian.sol';
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
 
 import '../interfaces/IERC20.sol';
-import '../interfaces/IPantherRouter01.sol';
+import '../interfaces/IPyroRouter01.sol';
 import '../libraries/SafeMath.sol';
-import '../libraries/PantherLibrary.sol';
+import '../libraries/PyroLibrary.sol';
 
 contract ExampleSwapToPrice {
     using SafeMath for uint256;
 
-    IPantherRouter01 public immutable router;
+    IPyroRouter01 public immutable router;
     address public immutable factory;
 
-    constructor(address factory_, IPantherRouter01 router_) public {
+    constructor(address factory_, IPyroRouter01 router_) public {
         factory = factory_;
         router = router_;
     }
@@ -62,7 +62,7 @@ contract ExampleSwapToPrice {
         bool aToB;
         uint256 amountIn;
         {
-            (uint256 reserveA, uint256 reserveB) = PantherLibrary.getReserves(factory, tokenA, tokenB);
+            (uint256 reserveA, uint256 reserveB) = PyroLibrary.getReserves(factory, tokenA, tokenB);
             (aToB, amountIn) = computeProfitMaximizingTrade(
                 truePriceTokenA, truePriceTokenB,
                 reserveA, reserveB
